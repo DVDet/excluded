@@ -1,0 +1,4 @@
+Have you ever wanted to turn off all your lights except for a couple that should stay on always?
+I did, but was disheartened to not find a clean solution. So I decided to make this. It turned out to be easier to do than I thought. The hard part turned out to be getting all the actions (services) pulled in to one component. Not to mention updating it if anything changes.
+It would certainly be easier for the core Home Assistant to adopt this code, but it building this custom component I realized why it's never been done.
+WARNING: using this component can have unexpected results. For example if you decide to open all curtains, well, garage doors are included in the cover group. If you don't exclude them specificly they will open as well. Which seem like a managable risk. However, if you setup an automation to use one of these actions and months later add a new device, it will now be included in that automation.
