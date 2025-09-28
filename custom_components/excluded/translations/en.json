@@ -1,0 +1,256 @@
+{
+    "services": {
+        "decrease_speed_fans": {
+            "description": "Decreases the speed of all fans except for the selected targets. WARNING: this will include fans added later to Home Assistant.",
+            "fields": {
+                "percentage_step": {
+                    "description": "Percentage step by which the speed should be decreased.",
+                    "name": "Decrement"
+                }
+            },
+            "name": "Decrease speed for all fans"
+        },
+        "increase_speed_fans": {
+            "description": "Increases the speed of all fans except for the selected targets. WARNING: this will include fans added later to Home Assistant.",
+            "fields": {
+                "percentage_step": {
+                    "description": "Percentage step by which the speed should be increased.",
+                    "name": "Increment"
+                }
+            },
+            "name": "Increase speed for all fans"
+        },
+        "oscillate_fans": {
+            "description": "Controls the oscillation of all fans except for the selected targets. WARNING: this will include fans added later to Home Assistant.",
+            "fields": {
+                "oscillating": {
+                    "description": "Turns oscillation on/off.",
+                    "name": "Oscillating"
+                }
+            },
+            "name": "Oscillate all fans"
+        },
+        "set_direction_fans": {
+            "description": "Sets all fan rotation direction except for the selected targets. WARNING: this will include fans added later to Home Assistant.",
+            "fields": {
+                "direction": {
+                    "description": "Direction of the fan rotation.",
+                    "name": "Direction"
+                }
+            },
+            "name": "Set direction for all fans"
+        },
+        "set_percentage_fans": {
+            "description": "Sets the speed of all fans except for the selected targets. WARNING: this will include fans added later to Home Assistant.",
+            "fields": {
+                "percentage": {
+                    "description": "Speed of the fan.",
+                    "name": "Percentage"
+                }
+            },
+            "name": "Set speed for all fans"
+        },
+        "set_preset_mode_fans": {
+            "description": "Sets preset fan mode for all fans except for the selected targets. WARNING: this will include fans added later to Home Assistant.",
+            "fields": {
+                "preset_mode": {
+                    "description": "Preset fan mode.",
+                    "name": "Preset mode"
+                }
+            },
+            "name": "Set preset mode for all fans"
+        },
+        "toggle_fans": {
+            "description": "Toggles all fans on/off except for the selected targets. WARNING: this will include fans added later to Home Assistant.",
+            "name": "Toggle all fans"
+        },
+        "turn_off_fans": {
+            "description": "Turns all fans on except for the selected targets. WARNING: this will include fans added later to Home Assistant.",
+            "name": "Turn off all fans"
+        },
+        "turn_on_fans": {
+            "description": "Turns all fans on except for the selected targets. WARNING: this will include fans added later to Home Assistant.",
+            "fields": {
+                "percentage": {
+                    "description": "Speed of the fan.",
+                    "name": "Percentage"
+                },
+                "preset_mode": {
+                    "description": "Preset fan mode except for the selected targets. WARNING: this will include fans added later to Home Assistant.",
+                    "name": "Preset mode"
+                }
+            },
+            "name": "Turn on all fans"
+        },
+        "toggle_lights": {
+            "description": "Toggles all lights except for the selected targets, from on to off, or, off to on, based on their current state. WARNING: this will include lights added later to Home Assistant.",
+            "fields": {
+                "brightness": {
+                    "description": "Number indicating brightness, where 0 turns the light off, 1 is the minimum brightness, and 255 is the maximum brightness.",
+                    "name": "Brightness value"
+                },
+                "brightness_pct": {
+                    "description": "Number indicating the percentage of full brightness, where 0 turns the light off, 1 is the minimum brightness, and 100 is the maximum brightness.",
+                    "name": "Brightness"
+                },
+                "color_name": {
+                    "description": "A human-readable color name.",
+                    "name": "Color name"
+                },
+                "color_temp": {
+                    "description": "Color temperature in mireds.",
+                    "name": "Color temperature"
+                },
+                "effect": {
+                    "description": "Light effect.",
+                    "name": "Effect"
+                },
+                "flash": {
+                    "description": "Tell light to flash, can be either value short or long.",
+                    "name": "Flash"
+                },
+                "hs_color": {
+                    "description": "Color in hue/sat format. A list of two integers. Hue is 0-360 and Sat is 0-100.",
+                    "name": "Hue/Sat color"
+                },
+                "kelvin": {
+                    "description": "Color temperature in Kelvin.",
+                    "name": "Color temperature"
+                },
+                "profile": {
+                    "description": "Name of a light profile to use.",
+                    "name": "Profile"
+                },
+                "rgb_color": {
+                    "description": "The color in RGB format. A list of three integers between 0 and 255 representing the values of red, green, and blue.",
+                    "name": "Color"
+                },
+                "rgbw_color": {
+                    "description": "The color in RGBW format. A list of four integers between 0 and 255 representing the values of red, green, blue, and white.",
+                    "name": "RGBW-color"
+                },
+                "rgbww_color": {
+                    "description": "The color in RGBWW format. A list of five integers between 0 and 255 representing the values of red, green, blue, cold white, and warm white.",
+                    "name": "RGBWW-color"
+                },
+                "transition": {
+                    "description": "Duration it takes to get to next state.",
+                    "name": "Transition"
+                },
+                "white": {
+                    "description": "Set the light to white mode.",
+                    "name": "White"
+                },
+                "xy_color": {
+                    "description": "Color in XY-format. A list of two decimal numbers between 0 and 1.",
+                    "name": "XY-color"
+                }
+            },
+            "name": "Toggle All Lights",
+            "sections": {
+                "advanced_fields": {
+                    "name": "Advanced options"
+                }
+            }
+        },
+        "turn_off_lights": {
+            "description": "Turn off all lights except for the selected targets. WARNING: this will include lights added later to Home Assistant.",
+            "fields": {
+                "flash": {
+                    "description": "Tell light to flash, can be either value short or long.",
+                    "name": "Flash"
+                },
+                "transition": {
+                    "description": "Duration it takes to get to next state.",
+                    "name": "Transition"
+                }
+            },
+            "name": "Turn off All Lights",
+            "sections": {
+                "advanced_fields": {
+                    "name": "Advanced options"
+                }
+            }
+        },
+        "turn_on_lights": {
+            "description": "Turns on all lights except for the selected targets and adjust properties of the light, even when they are turned on already. WARNING: this will include lights added later to Home Assistant.",
+            "fields": {
+                "brightness": {
+                    "description": "Number indicating brightness, where 0 turns the light off, 1 is the minimum brightness, and 255 is the maximum brightness.",
+                    "name": "Brightness value"
+                },
+                "brightness_pct": {
+                    "description": "Number indicating the percentage of full brightness, where 0 turns the light off, 1 is the minimum brightness, and 100 is the maximum brightness.",
+                    "name": "Brightness"
+                },
+                "brightness_step": {
+                    "description": "Change brightness by an amount.",
+                    "name": "Brightness step value"
+                },
+                "brightness_step_pct": {
+                    "description": "Change brightness by a percentage.",
+                    "name": "Brightness step"
+                },
+                "color_name": {
+                    "description": "A human-readable color name.",
+                    "name": "Color name"
+                },
+                "color_temp": {
+                    "description": "Color temperature in mireds.",
+                    "name": "Color temperature"
+                },
+                "effect": {
+                    "description": "Light effect.",
+                    "name": "Effect"
+                },
+                "flash": {
+                    "description": "Tell light to flash, can be either value short or long.",
+                    "name": "Flash"
+                },
+                "hs_color": {
+                    "description": "Color in hue/sat format. A list of two integers. Hue is 0-360 and Sat is 0-100.",
+                    "name": "Hue/Sat color"
+                },
+                "kelvin": {
+                    "description": "Color temperature in Kelvin.",
+                    "name": "Color temperature"
+                },
+                "profile": {
+                    "description": "Name of a light profile to use.",
+                    "name": "Profile"
+                },
+                "rgb_color": {
+                    "description": "The color in RGB format. A list of three integers between 0 and 255 representing the values of red, green, and blue.",
+                    "name": "Color"
+                },
+                "rgbw_color": {
+                    "description": "The color in RGBW format. A list of four integers between 0 and 255 representing the values of red, green, blue, and white.",
+                    "name": "RGBW-color"
+                },
+                "rgbww_color": {
+                    "description": "The color in RGBWW format. A list of five integers between 0 and 255 representing the values of red, green, blue, cold white, and warm white.",
+                    "name": "RGBWW-color"
+                },
+                "transition": {
+                    "description": "Duration it takes to get to next state.",
+                    "name": "Transition"
+                },
+                "white": {
+                    "description": "Set the light to white mode.",
+                    "name": "White"
+                },
+                "xy_color": {
+                    "description": "Color in XY-format. A list of two decimal numbers between 0 and 1.",
+                    "name": "XY-color"
+                }
+            },
+            "name": "Turn On All Lights",
+            "sections": {
+                "advanced_fields": {
+                    "name": "Advanced options"
+                }
+            }
+        }
+    },
+    "title": "Excluded"
+}

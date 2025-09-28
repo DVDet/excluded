@@ -1,0 +1,9 @@
+{
+    "domain": "excluded",
+    "name": "Excluded Actions",
+    "version": "0.1.0",
+    "documentation": "https://github.com/DVDet/excluded",
+    "dependencies": [],
+    "codeowners": ["@DVDet"],
+    "requirements": []
+}

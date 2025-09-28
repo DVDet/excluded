@@ -1,0 +1,40 @@
+{
+    "services": {
+      "toggle_lights": {
+        "service": "mdi:lightbulb"
+      },
+      "turn_off_lights": {
+        "service": "mdi:lightbulb-off"
+      },
+      "turn_on_lights": {
+        "service": "mdi:lightbulb-on"
+      },
+      "decrease_speed_fans": {
+        "service": "mdi:fan-minus"
+      },
+      "increase_speed_fans": {
+        "service": "mdi:fan-plus"
+      },
+      "oscillate_fans": {
+        "service": "mdi:arrow-oscillating"
+      },
+      "set_direction_fans": {
+        "service": "mdi:rotate-3d-variant"
+      },
+      "set_percentage_fans": {
+        "service": "mdi:fan"
+      },
+      "set_preset_mode_fans": {
+        "service": "mdi:fan-auto"
+      },
+      "toggle_fans": {
+        "service": "mdi:fan"
+      },
+      "turn_off_fans": {
+        "service": "mdi:fan-off"
+      },
+      "turn_on_fans": {
+        "service": "mdi:fan"
+      }
+    }
+  }
