@@ -1,9 +1,3 @@
-[![Project Maintenance][maintenance-shield]][user_profile]
-[![Discord][discord-shield]][discord]
-[![Community Forum][forum-shield]][forum]
-[![GitHub Activity][commits-shield]][commits]
-[![Downloads][download-latest-shield]]()
-[![HACS Installs][hacs-installs-shield]]()
 ## Introduction
 Have you ever wanted to turn off all your lights except for a couple?
 Looking around, there have been a number of conversations on the matter
