@@ -1,4 +1,9 @@
 {
+    "config": {
+      "abort": {
+        "single_instance_allowed": "Only one instance of Excluded is allowed."
+      }
+    },
     "services": {
         "decrease_speed_fans": {
             "description": "Decreases the speed of all fans except for the selected targets. WARNING: this will include fans added later to Home Assistant.",

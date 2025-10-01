@@ -1,14 +1,19 @@
 """Excluded actions integration for Home Assistant."""
 
+from homeassistant.config_entries import ConfigEntry
 from homeassistant.core import HomeAssistant, ServiceCall
 from homeassistant.helpers import entity_registry as er
 from homeassistant.helpers.service import async_extract_referenced_entity_ids
 
-DOMAIN = "excluded"
+from .const import DOMAIN
 
 
 async def async_setup(hass: HomeAssistant, config: dict):
     """Set up the Excluded integration."""
+    return True
+
+async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry):
+    """Set up Excluded from a config entry."""
 
     async def _handle_domain_entities(call: ServiceCall, action: str, domain: str):
         """Handle action calls for a given domain."""
@@ -94,4 +99,8 @@ async def async_setup(hass: HomeAssistant, config: dict):
     hass.services.async_register(DOMAIN, "set_brightness_lights", set_brightness_lights)
     hass.services.async_register(DOMAIN, "set_color_lights", set_color_lights)
 
+    return True
+
+async def async_unload_entry(hass: HomeAssistant, entry: ConfigEntry):
+    """Unload Excluded integration."""
     return True

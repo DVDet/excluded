@@ -1,0 +1,3 @@
+"""Store constants."""
+
+DOMAIN = "excluded"
