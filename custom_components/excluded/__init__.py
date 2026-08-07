@@ -4,9 +4,6 @@ from homeassistant.config_entries import ConfigEntry
 from homeassistant.core import HomeAssistant, ServiceCall
 from homeassistant.helpers import entity_registry as er
 from homeassistant.helpers.target import async_extract_referenced_entity_ids
-# from .target import (
-#     async_extract_referenced_entity_ids,
-# )
 
 from .const import DOMAIN
 
