@@ -3,7 +3,10 @@
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.core import HomeAssistant, ServiceCall
 from homeassistant.helpers import entity_registry as er
-from homeassistant.helpers.service import async_extract_referenced_entity_ids
+from homeassistant.helpers.target import async_extract_referenced_entity_ids
+# from .target import (
+#     async_extract_referenced_entity_ids,
+# )
 
 from .const import DOMAIN
 
@@ -11,6 +14,7 @@ from .const import DOMAIN
 async def async_setup(hass: HomeAssistant, config: dict):
     """Set up the Excluded integration."""
     return True
+
 
 async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry):
     """Set up Excluded from a config entry."""
@@ -100,6 +104,7 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry):
     hass.services.async_register(DOMAIN, "set_color_lights", set_color_lights)
 
     return True
+
 
 async def async_unload_entry(hass: HomeAssistant, entry: ConfigEntry):
     """Unload Excluded integration."""
